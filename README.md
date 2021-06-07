@@ -12,17 +12,17 @@ We intend to explore the relationship between SARS-CoV-2 titers in urban wastewa
 
 Given the strong linear relationship between the titer average values and the confirmed daily case count average values, we suspected that linear regression models would work best for this problem. We have explored the use of the following models for forecasting daily case count:
 
-**Naive Model**
+**1) Naive Model:**
 We develop a baseline persistence model for evaluating performance of other models. This model uses the case count values from previous day (t-1) to predict the values for the current day (t). 
 
-**Linear and Polynomial Regression**
+**2) Linear and Polynomial Regression:**
 We evaluate the use of simple linear and regression models solved using Ordinary Least-Squares. 
 
-**Generalized Linear Models**
+**3) Generalized Linear Models:**
 We suspect piece-wise linear models like GAMs might tend to work better than simple linear models, we develop such a model using Penalized B-Splines.
 
-**Gradient Boosting Regression**
+**4) Gradient Boosting Regression**
 
-**Recurrent Neural Networks**
+**5) Recurrent Neural Networks:**
 Since our time series data is sequential, we explore the use of recurrent neural networks such as **Gated Recurrent Units, LSTM with and without BiDirectional Layers** to create deep neural networks.
 
